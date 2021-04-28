@@ -1,0 +1,201 @@
+
+.main {
+    flex-direction: column;
+    height: 95vh;
+    flex-basis: 100vw;
+    display: flex;
+    justify-items: center;
+}
+.main-head{
+    height: 6%;
+    max-height: 6%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-head > h1{
+    padding: 0;
+    margin: 0 auto;
+}
+.main-head > h4{
+    color: red;
+    padding: 0;
+    margin: 0 auto;
+    font-size: larger;
+}
+.stock-header{
+    display: flex;
+    width: 30%;
+    padding-right: 20%;
+    align-self: center;
+    justify-self: center;
+}
+.s-h{
+    font-size: smaller;
+    margin: 0 2%;
+    white-space: nowrap;
+    align-self: flex-start;
+}
+
+.stock-main, .users-main {
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.stock-main > h4 {
+    margin: 0 auto;
+    padding: 0;
+    color: red;
+
+}
+.users-main{
+    height: 32vh;
+}
+.stock-main{
+    height: 62vh;
+}
+.stock, .user{
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+    margin: 0.5% 2%;
+}
+.stock{
+    height: 14%;
+}
+.user{
+    height: 21%;
+}
+.stock-price{
+    align-self: center;
+    justify-self: center;
+    width: 25%;
+}
+.stock-name, .stock-input, .buy-btn, .sell-btn, .username, .user-balance, .users-shares, .user-btn{
+    padding: 2%;
+    align-self: center;
+    justify-self: center;
+    width: 10%;
+}
+
+.stock-input{
+    border-radius: 3px;
+}
+.stock-input{
+display:flex;
+padding: 0;
+background:white;
+align-content: space-between;
+justify-content: space-between;
+ }
+ 
+
+
+ 
+ /* support chrome and firefox */
+ .stock-input input[type=number]::-webkit-inner-spin-button,
+ .stock-input input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance:none;
+ }
+ 
+ .stock-input input,.stock-input button{
+    margin: 0 auto;
+    width:33.3%;
+    font-weight:400;
+    background:white;
+    border:1px solid #aaa;
+    color: black;
+ }
+ 
+ .stock-input input{
+    border-left:none;
+    border-right:none;
+ }
+ .minus1:hover{
+    cursor: pointer;
+    background: rgba(255, 1, 39, 0.186);
+ }
+ .add1:hover{
+    cursor: pointer;
+    background: rgba(22, 255, 1, 0.186);
+ }
+
+.buy-btn, .sell-btn, .add1, .minus1{
+    color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.buy-btn, .add1{
+    background-color: rgba(74, 123, 6, 0.679);
+
+}
+.buy-btn:hover{
+    cursor: pointer;
+    background-color: rgba(130, 216, 9, 0.57);
+}
+.sell-btn, .minus1{
+    background-color: rgba(111, 12, 38, 0.892);
+}
+.sell-btn:hover{
+    cursor: pointer;
+    background-color: rgba(197, 41, 83, 0.679);
+}
+
+.stock-form, .user{
+    padding: 0 1%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+.stock-form{
+    height: 100%;
+    background-color: rgba(90, 125, 211, 0.349);
+    border: 1px solid rgba(51, 109, 255, 0.349);
+}
+.user{
+    background-color: rgba(92, 204, 129, 0.349);
+    border: 1px solid rgba(3, 109, 38, 0.493);
+}
+.active{
+    border : 1px solid red;
+    background-color : lightgreen;
+}
+.user-btn{
+    padding: 0;
+    height: 50%;
+    font-size: 10px;
+    border-radius: 3px;
+    color: white;
+    background: rgba(7, 7, 235, 0.713)
+}
+.user-btn:hover{
+    cursor: pointer;
+    background-color: rgba(38, 38, 196, 0.672)
+}
+.username{
+    height: 100%;
+    padding: 0;
+}
+.users-shares{
+    display: flex;
+    width: 65%;
+    height:100%;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+.shares-div{
+    margin: 1%;
+    border-radius: 3px;
+    color: rgb(15, 36, 102);
+    border: 2px solid rgba(5, 60, 0, 0.453);
+    background-color: rgba(246, 247, 247, 0.44);
+    height: 80%;
+    width: 22%;
+}
+.company-name, .quantity{
+    text-align: center;
+    padding: 2% 1%;
+    margin: 0 auto;
+    font-size: 12px;
+}

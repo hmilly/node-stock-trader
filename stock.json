@@ -1,0 +1,8 @@
+[
+    { "stockName": "amazon", "currentPrice": 1363.67 },
+    { "stockName": "disney", "currentPrice": 151.6 },
+    { "stockName": "sony", "currentPrice": 72.13 },
+    { "stockName": "tesla", "currentPrice": 651.6 },
+    { "stockName": "walmart", "currentPrice": 285.76 }
+  ]
+  

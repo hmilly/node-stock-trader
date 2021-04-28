@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "firstName": "pete",
+    "lastName": "ryan",
+    "balance": 100,
+    "transactions": [
+      {
+        "shareName": "Amazon",
+        "priceOnPurchase": 200,
+        "priceOnSell": null,
+        "quantity": 5
+      },
+      {
+        "shareName": "Disney",
+        "priceOnPurchase": 150.02,
+        "priceOnSell": null,
+        "quantity": 1
+      },
+      {
+        "shareName": "Sony",
+        "priceOnPurchase": 50,
+        "priceOnSell": null,
+        "quantity": 4
+      },
+      {
+        "shareName": "Tesla",
+        "priceOnPurchase": 320,
+        "priceOnSell": null,
+        "quantity": 3
+      },
+      {
+        "shareName": "Walmart",
+        "priceOnPurchase": 400,
+        "priceOnSell": null,
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "firstName": "dae",
+    "lastName": "bay",
+    "balance": 2000,
+    "transactions": [
+      {
+        "shareName": "Amazon",
+        "priceOnPurchase": 200,
+        "priceOnSell": null,
+        "quantity": 1
+      },
+      {
+        "shareName": "Disney",
+        "priceOnPurchase": 150.02,
+        "priceOnSell": null,
+        "quantity": 1
+      },
+      {
+        "shareName": "Sony",
+        "priceOnPurchase": 50,
+        "priceOnSell": null,
+        "quantity": 1
+      },
+      {
+        "shareName": "Tesla",
+        "priceOnPurchase": 320,
+        "priceOnSell": null,
+        "quantity": 1
+      },
+      {
+        "shareName": "Walmart",
+        "priceOnPurchase": 400,
+        "priceOnSell": null,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "firstName": "sandy",
+    "lastName": "gab",
+    "balance": 3698,
+    "transactions": [
+      {
+        "shareName": "Amazon",
+        "priceOnPurchase": 200,
+        "priceOnSell": null,
+        "quantity": 1
+      },
+      {
+        "shareName": "Disney",
+        "priceOnPurchase": 150.02,
+        "priceOnSell": null,
+        "quantity": 1
+      },
+      {
+        "shareName": "Sony",
+        "priceOnPurchase": 50,
+        "priceOnSell": null,
+        "quantity": 1
+      },
+      {
+        "shareName": "Tesla",
+        "priceOnPurchase": 320,
+        "priceOnSell": null,
+        "quantity": 1
+      },
+      {
+        "shareName": "Walmart",
+        "priceOnPurchase": 400,
+        "priceOnSell": null,
+        "quantity": 1
+      }
+    ]
+  }
+]
