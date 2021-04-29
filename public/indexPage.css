@@ -8,19 +8,20 @@
 }
 
 .main-head{
-    height: 6%;
-    max-height: 6%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 10%;
     text-align: center;
 }
 .main-head h1{
+    width: 100%;
+    font-size: 40px;
     padding: 0;
     margin: 0 auto;
 }
 .main-head h4{
     color: red;
-    padding: 0;
-    margin: 1% auto;
+    margin: 2% auto;
     font-size: 20px;
 }
 .stock-header, .users-header{
@@ -57,10 +58,10 @@
     font-size: 20px;
 }
 .users-main{
-    height: 35%;
+    height: 30%;
 }
 .stock-main{
-    height: 65%;
+    height: 60%;
 }
 .stock, .user{
     width: 80%;
