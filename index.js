@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 });
 
 var requestOptions = {
-  'url': `https://api.tiingo.com/iex/?tickers=sne,tsla,amzn,wmt,dis&token=${token}`,
+  'url': `https://api.tiingo.com/iex/?tickers=sony,tsla,amzn,wmt,dis&token=${token}`,
   'headers': {
     'Content-Type': 'application/json'
   }
@@ -39,7 +39,7 @@ let obj = [
   {
     id: 3,
     stockName: "Sony",
-    tag: "SNE",
+    tag: "SONY",
     currentPrice: 0
   },
   {
@@ -56,24 +56,28 @@ let obj = [
   }
 ]
 
+const findPrice = (item) => {
+  obj.map(i => {
+
+    if (i.tag === item.ticker)
+      item.last === 0 ? i.currentPrice = item.last : i.currentPrice = item.prevClose
+  })
+}
+
 const int = () => {
   request(requestOptions,
     function (error, response, body) {
-      JSON.parse(body).map(item => {
-        const findPrice = (price) =>
-          obj.map(i => {
-            if (i.tag === item.ticker)
-              i.currentPrice = price
-          })
 
-        if (item.bidPrice) {
-          findPrice(item.bidPrice)
+      JSON.parse(body).map(item => {
+        console.log(item)
+        if (!item) {
+          findPrice(item)
         } else {
-          findPrice(item.prevClose)
+          findPrice(item)
           clearInterval(interval)
-  
           io.emit("closedMarkets", "Markets closed for today! Last prices are below :)")
         }
+
       })
       io.on("connection", (socket) => {
       })
@@ -91,5 +95,4 @@ const interval = setInterval(() => {
   int()
 }, 5000);
 
-server.listen(3000, () => console.log("project listening!"))
-process.setMaxListeners(0)
+server.listen(3000, () => console.log("project listening!")).setMaxListeners(0)
