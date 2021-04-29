@@ -58,7 +58,6 @@ let obj = [
 
 const findPrice = (item) => {
   obj.map(i => {
-
     if (i.tag === item.ticker)
       item.last === 0 ? i.currentPrice = item.last : i.currentPrice = item.prevClose
   })
@@ -67,7 +66,6 @@ const findPrice = (item) => {
 const int = () => {
   request(requestOptions,
     function (error, response, body) {
-
       JSON.parse(body).map(item => {
         console.log(item)
         if (!item) {
@@ -77,7 +75,6 @@ const int = () => {
           clearInterval(interval)
           io.emit("closedMarkets", "Markets closed for today! Last prices are below :)")
         }
-
       })
       io.on("connection", (socket) => {
       })
