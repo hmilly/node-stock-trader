@@ -1,10 +1,15 @@
-
+body{
+    background: black
+}
 .main {
-    flex-direction: column;
-    height: 95vh;
-    flex-basis: 100vw;
     display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    height: 95vh;
     justify-items: center;
+    background: rgb(28,43,87);
+    background: radial-gradient(circle, rgba(28,43,87,1) 0%, rgba(4,7,98,1) 61%, rgba(0,3,40,1) 100%);
+    color: white;
 }
 
 .main-head{
@@ -20,7 +25,7 @@
     margin: 0 auto;
 }
 .main-head h4{
-    color: red;
+    color: rgba(255, 123, 123, 0.981);
     margin: 2% auto;
     font-size: 20px;
 }
@@ -53,8 +58,8 @@
 }
 .stock-main h4 {
     margin: 0 auto;
-    padding: 0;
-    color: red;
+    padding-bottom: 10px;
+    color: rgba(255, 123, 123, 0.981);
     font-size: 20px;
 }
 .users-main{
@@ -63,26 +68,33 @@
 .stock-main{
     height: 60%;
 }
+
 .stock, .user{
-    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
     align-self: center;
     justify-self: center;
+    border-radius: 3px;
+    padding: 0 1%;
+    width: 80%;
     margin: 0.5% 2%;
 }
+
 .stock{
     height: 14%;
 }
 .user{
     height: 21%;
+    background-color: rgba(17, 17, 17, 0.282);
 }
 .stock-name, .stock-price, .stock-input,
 .buy-btn, .sell-btn, .username, .user-balance,
 .users-shares, .user-btn{
-    padding: 2%;
     align-self: center;
     justify-self: center;
     width: 10%;
-    text-align: center;
+    height: auto;
     font-size: 20px;
 }
 
@@ -91,7 +103,6 @@
     padding: 0;
     height: 40%;
     width: 15%;
-    background:white;
     align-content: space-between;
     justify-content: space-between;
     border-radius: 5px;
@@ -103,68 +114,62 @@
  .stock-input input,.stock-input button{
     margin: 0 auto;
     width:33.3%;
-    background:white;
-    border:1px solid #aaa;
-    color: black;
+    background:rgba(255, 255, 255, 0.493);
+    border:2px solid rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 2px;
  }
  .stock-input input{
     border-left:none;
     border-right:none;
  }
 .buy-btn, .sell-btn{
-    color: white;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1%;
     border-radius: 3px;
+    color: white;
 }
 .buy-btn{
-    background-color: rgba(74, 123, 6, 0.679);
+    background-color: rgba(74, 123, 6, 0.892);
 }
 .sell-btn{
     background-color: rgba(111, 12, 38, 0.892);
 }
 .buy-btn:hover, .add1:hover{
     cursor: pointer;
-    background-color: rgba(130, 216, 9, 0.57);
+    background-color: rgba(130, 216, 9, 0.892);
 }
-.sell-btn:hover,  .minus1:hover{
+.sell-btn:hover, .minus1:hover{
     cursor: pointer;
-    background-color: rgba(197, 41, 83, 0.679);
+    background-color: rgba(197, 41, 83, 0.8929);
+}
+.buy-btn:active, .add1:active, .sell-btn:active, .minus1:active, .user-btn:active{
+    box-shadow: 0 5px rgba(63, 63, 63, 0.481);
+    transform: translateY(2px);
 }
 
-.stock-form, .user{
-    padding: 0 1%;
-    border-radius: 3px;
-    display: flex;
-    justify-content: space-between;
-}
-.stock-form{
+
+.stock{
     height: 100%;
-    background-color: rgba(90, 125, 211, 0.349);
-    border: 1px solid rgba(51, 109, 255, 0.349);
+    background-color: rgba(17, 17, 17, 0.288);
 }
-.user{
-    background-color: rgba(92, 204, 129, 0.349);
-    border: 1px solid rgba(3, 109, 38, 0.493);
-}
+
 .active{
-    border : 1px solid red;
-    background-color : lightgreen;
+    background-color : rgb(12, 12, 12);
+    border: solid 1px white;
 }
 .user-btn{
     padding: 0;
     height: 70%;
-    border-radius: 3px;
+    border-radius: 5px;
     color: white;
-    background: rgba(7, 7, 235, 0.713)
+    background-color: rgba(67, 236, 255, 0.385)
 }
 .user-btn:hover{
     cursor: pointer;
-    background-color: rgba(38, 38, 196, 0.672)
+    background-color: rgba(67, 236, 255, 0.679)
 }
-.username{
-    height: 100%;
-    padding: 0;
-}
+
 .users-shares{
     display: flex;
     width: 65%;
@@ -176,12 +181,11 @@
 }
 .shares-div{
     margin: 1%;
-    border-radius: 3px;
-    color: rgb(15, 36, 102);
-    border: 2px solid rgba(5, 60, 0, 0.453);
-    background-color: rgba(246, 247, 247, 0.44);
+    border: 1px solid rgba(116, 113, 113, 0.419);
+    border-radius: 2px;
+    color: rgba(175, 252, 255, 0.994);
     height: 80%;
-    width: 22%;
+    width: 25%;
 }
 .company-name, .quantity{
     text-align: center;

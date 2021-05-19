@@ -5,6 +5,7 @@ const server = http.createServer(app)
 const socketIo = require('socket.io')
 const io = socketIo(server)
 const path = require("path")
+//node index.js
 
 var request = require('request');
 const { token } = require('./loginDetails')
@@ -59,7 +60,7 @@ let obj = [
 const findPrice = (item) => {
   obj.map(i => {
     if (i.tag === item.ticker)
-      item.last === 0 ? i.currentPrice = item.last : i.currentPrice = item.prevClose
+      item.last !== 0 ? i.currentPrice = item.last : i.currentPrice = item.prevClose
   })
 }
 
@@ -67,16 +68,13 @@ const int = () => {
   request(requestOptions,
     function (error, response, body) {
       JSON.parse(body).map(item => {
-        console.log(item)
-        if (!item) {
+        if (item.last !== null) {
           findPrice(item)
         } else {
           findPrice(item)
           clearInterval(interval)
-          io.emit("closedMarkets", "Markets closed for today! Last prices are below :)")
+          io.emit("closedMarkets", "Markets closed for today! Last prices are below:")
         }
-      })
-      io.on("connection", (socket) => {
       })
       io.sockets.emit("updateStock", obj)
     })

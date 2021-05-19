@@ -17,7 +17,6 @@ const errorMsg = (msg) => {
 }
 
 socket.on("updateStock", (stockData) => {
-    //console.log(stockData)
     stockData.map((stock, i) => {
         const stockNum = select(`stock${i + 1}`)
         stockNum.innerText =
@@ -115,9 +114,9 @@ const buySell = (bs) => bs.forEach(btn => btn.addEventListener("click", (e) => {
     const equation = inputVal * currentPrice
     const selectedUser = document.querySelector(".active")
     !selectedUser
-    ? errorMsg("No user selected, please make a selection") 
-    : usersStock = selectedUser.querySelectorAll(".shares-div")
-    
+        ? errorMsg("No user selected, please make a selection")
+        : usersStock = selectedUser.querySelectorAll(".shares-div")
+
     const updateShares = (sign) =>
         usersStock.forEach(div => {
             if (div.firstElementChild.innerText.includes(stockName)) {
