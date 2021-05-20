@@ -145,6 +145,5 @@ const buySell = (bs) => bs.forEach(btn => btn.addEventListener("click", (e) => {
         updateShares("m")
     }
 }))
-
 buySell(buyBtns)
 buySell(sellBtn)

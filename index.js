@@ -68,7 +68,7 @@ const int = () => {
   request(requestOptions,
     function (error, response, body) {
       JSON.parse(body).map(item => {
-        if (item.last !== null) {
+        if (item.askSize !== null) {
           findPrice(item)
         } else {
           findPrice(item)

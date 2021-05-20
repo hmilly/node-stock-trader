@@ -4,12 +4,13 @@ body{
 .main {
     display: flex;
     flex-direction: column;
-    flex-basis: 100vw;
-    height: 95vh;
+    width: 1400px;
+    height: 98vh;
     justify-items: center;
     background: rgb(28,43,87);
     background: radial-gradient(circle, rgba(28,43,87,1) 0%, rgba(4,7,98,1) 61%, rgba(0,3,40,1) 100%);
     color: white;
+    margin: 0 auto;
 }
 
 .main-head{
@@ -26,7 +27,7 @@ body{
 }
 .main-head h4{
     color: rgba(255, 123, 123, 0.981);
-    margin: 2% auto;
+    margin: 2px auto;
     font-size: 20px;
 }
 .stock-header, .users-header{
@@ -85,7 +86,7 @@ body{
     height: 14%;
 }
 .user{
-    height: 21%;
+    height: 24%;
     background-color: rgba(17, 17, 17, 0.282);
 }
 .stock-name, .stock-price, .stock-input,
@@ -189,6 +190,6 @@ body{
 }
 .company-name, .quantity{
     text-align: center;
-    padding: 2% 1%;
+    padding: 0 1%;
     margin: 0 auto;
 }
