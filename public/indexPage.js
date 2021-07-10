@@ -6,7 +6,7 @@ const usersMain = select("users-main")
 const errorMsg = (msg) => {
     const h4Exists = select("h4")
     if (!h4Exists) {
-        const h1 = select("main-head")
+        const h1 = select("head")
         const h4 = document.createElement("h4")
         h4.classList = "h4"
         h4.innerText = msg
@@ -25,7 +25,7 @@ socket.on("updateStock", (stockData) => {
 })
 
 socket.once("closedMarkets", msg => {
-    const stockHeader = select("stock-main")
+    const stockHeader = select("head")
     const h4 = document.createElement("h4")
     h4.innerText = msg
     stockHeader.prepend(h4);
@@ -34,19 +34,16 @@ socket.once("closedMarkets", msg => {
 let currentUser
 socket.once("printUsers", (userData) => {
     userData.map((user, i) => {
-        select("users-main").innerHTML +=
-            `<div class="user">
-        <h3 class="username">${user.firstName} ${user.lastName}</h3>
-        <p class="user-balance">${user.balance}</p>
-        <div class="users-shares us${i}"></div>
-        <button class="user-btn">Select user</button>
-    </div>`
+        select("user-balance").innerHTML += `
+            ${user.balance}`
+        select("user-total").innerHTML += `
+            ${user.balance}`
         userData[i].transactions.map(data => {
-            select(`us${i}`).innerHTML +=
-                `<div class="shares-div">
-            <h3 class="company-name">${data.shareName}</h3>
-            <h5 class="quantity">${data.quantity}</h5>
-            </div>`
+            select(`user-stocks`).innerHTML += `
+        <span>
+            <h4 class="company-name">${data.shareName}:</h4>
+            <h4 class="quantity">${data.quantity}</h4>
+        </span>`
         })
     })
 

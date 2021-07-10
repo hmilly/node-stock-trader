@@ -1,115 +1,37 @@
 [
     {
-      "id": 1,
-      "firstName": "Pete",
-      "lastName": "Ryan",
-      "balance": 100,
+      "name": "",
+      "balance": 10000,
       "transactions": [
         {
           "shareName": "Amazon",
-          "priceOnPurchase": 200,
+          "priceOnPurchase": 0,
           "priceOnSell": null,
-          "quantity": 5
+          "quantity": 0
         },
         {
           "shareName": "Disney",
-          "priceOnPurchase": 150.02,
+          "priceOnPurchase": 0,
           "priceOnSell": null,
-          "quantity": 1
+          "quantity": 0
         },
         {
           "shareName": "Sony",
-          "priceOnPurchase": 50,
+          "priceOnPurchase": 0,
           "priceOnSell": null,
-          "quantity": 4
+          "quantity": 0
         },
         {
           "shareName": "Tesla",
-          "priceOnPurchase": 320,
+          "priceOnPurchase": 0,
           "priceOnSell": null,
-          "quantity": 3
+          "quantity": 0
         },
         {
           "shareName": "Walmart",
-          "priceOnPurchase": 400,
+          "priceOnPurchase": 0,
           "priceOnSell": null,
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "firstName": "Dae",
-      "lastName": "Bay",
-      "balance": 2000,
-      "transactions": [
-        {
-          "shareName": "Amazon",
-          "priceOnPurchase": 200,
-          "priceOnSell": null,
-          "quantity": 1
-        },
-        {
-          "shareName": "Disney",
-          "priceOnPurchase": 150.02,
-          "priceOnSell": null,
-          "quantity": 1
-        },
-        {
-          "shareName": "Sony",
-          "priceOnPurchase": 50,
-          "priceOnSell": null,
-          "quantity": 1
-        },
-        {
-          "shareName": "Tesla",
-          "priceOnPurchase": 320,
-          "priceOnSell": null,
-          "quantity": 1
-        },
-        {
-          "shareName": "Walmart",
-          "priceOnPurchase": 400,
-          "priceOnSell": null,
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "firstName": "Sandy",
-      "lastName": "Gab",
-      "balance": 3698,
-      "transactions": [
-        {
-          "shareName": "Amazon",
-          "priceOnPurchase": 200,
-          "priceOnSell": null,
-          "quantity": 1
-        },
-        {
-          "shareName": "Disney",
-          "priceOnPurchase": 150.02,
-          "priceOnSell": null,
-          "quantity": 1
-        },
-        {
-          "shareName": "Sony",
-          "priceOnPurchase": 50,
-          "priceOnSell": null,
-          "quantity": 1
-        },
-        {
-          "shareName": "Tesla",
-          "priceOnPurchase": 320,
-          "priceOnSell": null,
-          "quantity": 1
-        },
-        {
-          "shareName": "Walmart",
-          "priceOnPurchase": 400,
-          "priceOnSell": null,
-          "quantity": 1
+          "quantity": 0
         }
       ]
     }

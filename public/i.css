@@ -1,0 +1,204 @@
+*{
+    border: solid red 1px;
+}
+
+body{
+    background: black;
+    width: 98vw;
+    height: 98vh;
+    border: solid 1px blue;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+    width: 100%;
+    height: 98vh;
+    justify-items: center;
+    background: rgb(28,43,87);
+    background: radial-gradient(circle, rgba(28,43,87,1) 0%,
+    rgba(4,7,98,1) 61%, rgba(0,3,40,1) 100%);
+    color: white;
+    margin: 0 auto;
+}
+
+.stock-main{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    text-align: center;
+}
+.stock-main h1{
+    width: 100%;
+    font-size: 40px;
+    padding: 0;
+    margin: 0 auto;
+}
+.stock-main h4{
+    color: rgba(255, 123, 123, 0.981);
+    margin: 2px auto;
+    font-size: 20px;
+}
+.stock-headers{
+    display: flex;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+}
+.stock-headers h5, .users-header h5{
+    font-size: 20px;
+    margin: 0 1%;
+    flex: 1.5;
+    white-space: nowrap;
+    align-self: flex-start;
+}
+.users-header h5:nth-child(3){
+    flex: 10;
+    text-align: center;
+}
+.stock-header h5:nth-child(3){
+    flex: 3;
+    text-align: center;
+}
+
+.stock-main, .users-main {
+    display: flex;
+    flex-direction: column;
+    width:  100%;
+}
+.stock-main h4 {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    color: rgba(255, 123, 123, 0.981);
+    font-size: 20px;
+}
+.users-main{
+    height: 30%;
+}
+
+
+.stock, .user{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    align-self: center;
+    justify-self: center;
+    border-radius: 3px;
+    padding: 0 1%;
+    width: 80%;
+    margin: 0.5% 2%;
+}
+
+.stock{
+    height: 14%;
+}
+.user{
+    height: 24%;
+    background-color: rgba(17, 17, 17, 0.282);
+}
+.stock-name, .stock-price, .stock-input,
+.buy-btn, .sell-btn, .username, .user-balance,
+.users-shares, .user-btn{
+    align-self: center;
+    justify-self: center;
+    width: 10%;
+    height: auto;
+    font-size: 20px;
+}
+
+.stock-input{
+    display:flex;
+    padding: 0;
+    height: 40%;
+    width: 15%;
+    align-content: space-between;
+    justify-content: space-between;
+    border-radius: 5px;
+ }
+ .stock-input input[type=number]::-webkit-inner-spin-button,
+ .stock-input input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance:none;
+ }
+ .stock-input input,.stock-input button{
+    margin: 0 auto;
+    width:33.3%;
+    background:rgba(255, 255, 255, 0.493);
+    border:2px solid rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 2px;
+ }
+ .stock-input input{
+    border-left:none;
+    border-right:none;
+ }
+.buy-btn, .sell-btn{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    border-radius: 3px;
+    color: white;
+}
+.buy-btn{
+    background-color: rgba(74, 123, 6, 0.892);
+}
+.sell-btn{
+    background-color: rgba(111, 12, 38, 0.892);
+}
+.buy-btn:hover, .add1:hover{
+    cursor: pointer;
+    background-color: rgba(130, 216, 9, 0.892);
+}
+.sell-btn:hover, .minus1:hover{
+    cursor: pointer;
+    background-color: rgba(197, 41, 83, 0.8929);
+}
+.buy-btn:active, .add1:active, .sell-btn:active,
+.minus1:active, .user-btn:active{
+    box-shadow: 0 5px rgba(63, 63, 63, 0.481);
+    transform: translateY(2px);
+}
+
+.stock{
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.288);
+}
+
+.active{
+    background-color : rgb(12, 12, 12);
+    border: solid 1px white;
+}
+.user-btn{
+    padding: 0;
+    height: 70%;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(67, 236, 255, 0.385)
+}
+.user-btn:hover{
+    cursor: pointer;
+    background-color: rgba(67, 236, 255, 0.679)
+}
+
+.users-shares{
+    display: flex;
+    width: 65%;
+    height:100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.shares-div{
+    margin: 1%;
+    border: 1px solid rgba(116, 113, 113, 0.419);
+    border-radius: 2px;
+    color: rgba(175, 252, 255, 0.994);
+    height: 80%;
+    width: 25%;
+}
+.company-name, .quantity{
+    text-align: center;
+    padding: 0 1%;
+    margin: 0 auto;
+}

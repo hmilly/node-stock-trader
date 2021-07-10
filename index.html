@@ -8,81 +8,109 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="main-head">
-            <h1>Stock available:</h1>
-        </div>
-        <div class="users-main">
-            <div class=users-header>
-                <h5>Users:</h5>
-                <h5>Balance:</h5>
-                <h5>Companys invested in:</h5>
-            </div>
-        </div>
-        <div class="stock-main">
-            <div class=stock-header>
-                <h5>Stock Name:</h5>
-                <h5>Current Price:</h5>
-                <h5>Quantity:</h5>
-            </div>
-            <div class="stock">
-                <p class="stock-name">Amazon</p>
-                <h3 class="stock-price stock1">0</h3>
 
-                <div class="stock-input">
-                    <button class="btn minus1">-</button>
-                    <input class="quantity" min="0" name="form-0-quantity" value="0" type="number">
-                    <button class="btn add1">+</button>
+    <header class="head">
+        <h1>Stock Trader</h1>
+        <p>Enter a name below and play the stock markets.
+            See how much you can make, with an inital kitty of $10,000
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Companies available:</h2>
+            <div class="stock-container">
+                <div class="stock">
+                    <p class="stock-name">Amazon</p>
+                    <h3 class="stock-price stock1">0</h3>
+                    <div>
+                        <button class="btn minus1">-</button>
+                        <input class="quantity" min="0" name="form-0-quantity" value="0" type="number">
+                        <button class="btn add1">+</button>
+                    </div>
+                    <div>
+                        <button class="sell-btn">Sell</button>
+                        <button class="buy-btn">Buy</button>
+                    </div>
                 </div>
-                <button class="buy-btn">Buy</button>
-                <button class="sell-btn">Sell</button>
+                <div class="stock">
+                    <p class="stock-name">Disney</p>
+                    <h3 class="stock-price stock2">0</h3>
+                    <div class="stock-input">
+                        <button class="btn minus1">-</button>
+                        <input class="quantity" min="0" name="form-0-quantity" value="0" type="number">
+                        <button class="btn add1">+</button>
+                    </div>
+                    <div>
+                        <button class="sell-btn">Sell</button>
+                        <button class="buy-btn">Buy</button>
+                    </div>
+                </div>
+                <div class="stock">
+                    <p class="stock-name">Sony</p>
+                    <h3 class="stock-price stock3">0</h3>
+                    <div class="stock-input">
+                        <button class="btn minus1">-</button>
+                        <input class="quantity" min="0" name="form-0-quantity" value="0" type="number">
+                        <button class="btn add1">+</button>
+                    </div>
+                    <div>
+                        <button class="sell-btn">Sell</button>
+                        <button class="buy-btn">Buy</button>
+                    </div>
+                </div>
+                <div class="stock">
+                    <p class="stock-name">Tesla</p>
+                    <h3 class="stock-price stock4">0</h3>
+                    <div class="stock-input">
+                        <button class="btn minus1">-</button>
+                        <input class="quantity" min="0" name="form-0-quantity" value="0" type="number">
+                        <button class="btn add1">+</button>
+                    </div>
+                    <div>
+                        <button class="sell-btn">Sell</button>
+                        <button class="buy-btn">Buy</button>
+                    </div>
+                </div>
+                <div class="stock">
+                    <p class="stock-name">Walmart</p>
+                    <h3 class="stock-price stock5">0</h3>
+                    <div class="stock-input">
+                        <button class="btn minus1">-</button>
+                        <input class="quantity" min="0" name="form-0-quantity" value="0" type="number">
+                        <button class="btn add1">+</button>
+                    </div>
+                    <div>
+                        <button class="sell-btn">Sell</button>
+                        <button class="buy-btn">Buy</button>
+                    </div>
+                </div>
             </div>
-            <div class="stock">
-                <p class="stock-name">Disney</p>
-                <h3 class="stock-price stock2">0</h3>
-                <div class="stock-input">
-                    <button class="btn minus1">-</button>
-                    <input class="quantity" min="0" name="form-0-quantity" value="0" type="number">
-                    <button class="btn add1">+</button>
-                </div>
-                <button class="buy-btn">Buy</button>
-                <button class="sell-btn">Sell</button>
+        </section>
+
+        <div class="user-container">
+            <h2>Details:</h2>
+            <div class="user-details">
+                <h3>User:</h3>
+                <input type="text" name="user" class="username"></input>
             </div>
-            <div class="stock">
-                <p class="stock-name">Sony</p>
-                <h3 class="stock-price stock3">0</h3>
-                <div class="stock-input">
-                    <button class="btn minus1">-</button>
-                    <input class="quantity" min="0" name="form-0-quantity" value="0" type="number">
-                    <button class="btn add1">+</button>
-                </div>
-                <button class="buy-btn">Buy</button>
-                <button class="sell-btn">Sell</button>
+            <div class="user-money">
+                <h3>Balance:</h3>
+                <h3 class="user-balance"></h3>
+                <h3>Total profit:</h3>
+                <h3 class="user-total"></h3>
             </div>
-            <div class="stock">
-                <p class="stock-name">Tesla</p>
-                <h3 class="stock-price stock4">0</h3>
-                <div class="stock-input">
-                    <button class="btn minus1">-</button>
-                    <input class="quantity" min="0" name="form-0-quantity" value="0" type="number">
-                    <button class="btn add1">+</button>
-                </div>
-                <button class="buy-btn">Buy</button>
-                <button class="sell-btn">Sell</button>
+            <h2>Companys invested in:</h2>
+            <div class="user-stocks">
+
             </div>
-            <div class="stock">
-                <p class="stock-name">Walmart</p>
-                <h3 class="stock-price stock5">0</h3>
-                <div class="stock-input">
-                    <button class="btn minus1">-</button>
-                    <input class="quantity" min="0" name="form-0-quantity" value="0" type="number">
-                    <button class="btn add1">+</button>
-                </div>
-                <button class="buy-btn">Buy</button>
-                <button class="sell-btn">Sell</button>
+            <div class="user-btns">
+                <button>Reset Form</button>
+                <button>Save User</button>
             </div>
         </div>
-    </div>
+
+    </main>
 </body>
 <script src="/socket.io/socket.io.js"></script>
 <script src="http://localhost:3000"></script>

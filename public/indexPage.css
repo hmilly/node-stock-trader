@@ -1,195 +1,117 @@
+*{
+    color: white;
+    text-align: center;
+}
+h2{
+    text-decoration: underline;
+}
+
 body{
-    background: black
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5%;
+    background-color: rgb(82, 65, 92);
 }
-.main {
-    display: flex;
-    flex-direction: column;
-    width: 1400px;
-    height: 98vh;
-    justify-items: center;
-    background: rgb(28,43,87);
-    background: radial-gradient(circle, rgba(28,43,87,1) 0%, rgba(4,7,98,1) 61%, rgba(0,3,40,1) 100%);
-    color: white;
-    margin: 0 auto;
-}
-
-.main-head{
-    display: flex;
-    flex-direction: column;
-    height: 10%;
-    text-align: center;
-}
-.main-head h1{
-    width: 100%;
-    font-size: 40px;
-    padding: 0;
-    margin: 0 auto;
-}
-.main-head h4{
-    color: rgba(255, 123, 123, 0.981);
-    margin: 2px auto;
-    font-size: 20px;
-}
-.stock-header, .users-header{
-    display: flex;
-    width: 80%;
-    align-self: center;
-    justify-self: center;
-}
-.stock-header h5, .users-header h5{
-    font-size: 20px;
-    margin: 0 1%;
-    flex: 1.5;
-    white-space: nowrap;
-    align-self: flex-start;
-}
-.users-header h5:nth-child(3){
-    flex: 10;
-    text-align: center;
-}
-.stock-header h5:nth-child(3){
-    flex: 3;
+.head{
     text-align: center;
 }
 
-.stock-main, .users-main {
-    display: flex;
-    flex-direction: column;
-    width:  100%;
-}
-.stock-main h4 {
-    margin: 0 auto;
-    padding-bottom: 10px;
-    color: rgba(255, 123, 123, 0.981);
+.head p{
     font-size: 20px;
+    font-weight: bold;
 }
-.users-main{
-    height: 30%;
+main{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 15%;
 }
-.stock-main{
-    height: 60%;
-}
-
-.stock, .user{
-    display: flex;
-    justify-content: space-between;
-    align-content: space-around;
-    align-self: center;
-    justify-self: center;
-    border-radius: 3px;
-    padding: 0 1%;
-    width: 80%;
-    margin: 0.5% 2%;
-}
-
-.stock{
-    height: 14%;
-}
-.user{
-    height: 24%;
-    background-color: rgba(17, 17, 17, 0.282);
-}
-.stock-name, .stock-price, .stock-input,
-.buy-btn, .sell-btn, .username, .user-balance,
-.users-shares, .user-btn{
-    align-self: center;
-    justify-self: center;
-    width: 10%;
-    height: auto;
-    font-size: 20px;
-}
-
-.stock-input{
-    display:flex;
-    padding: 0;
-    height: 40%;
-    width: 15%;
-    align-content: space-between;
-    justify-content: space-between;
+section{
     border-radius: 5px;
- }
- .stock-input input[type=number]::-webkit-inner-spin-button,
- .stock-input input[type=number]::-webkit-outer-spin-button{
-    -webkit-appearance:none;
- }
- .stock-input input,.stock-input button{
-    margin: 0 auto;
-    width:33.3%;
-    background:rgba(255, 255, 255, 0.493);
-    border:2px solid rgb(255, 255, 255);
-    font-size: 20px;
-    border-radius: 2px;
- }
- .stock-input input{
-    border-left:none;
-    border-right:none;
- }
-.buy-btn, .sell-btn{
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1%;
-    border-radius: 3px;
-    color: white;
+    background: rgb(28,43,87);
 }
-.buy-btn{
-    background-color: rgba(74, 123, 6, 0.892);
+
+.stock-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(130px, 1fr));
+    gap: 10px;
 }
-.sell-btn{
-    background-color: rgba(111, 12, 38, 0.892);
+.stock{
+    background: rgb(28,43,87);
+    background: radial-gradient(circle, rgba(28,43,87,1) 0%,
+    rgba(4,7,98,1) 61%, rgba(0,3,40,1) 100%);
 }
-.buy-btn:hover, .add1:hover{
-    cursor: pointer;
-    background-color: rgba(130, 216, 9, 0.892);
+.stock div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(10px, 1fr));
 }
-.sell-btn:hover, .minus1:hover{
+.stock button:first-child, .user-btns button:first-child{
+    padding: 10px 0;
+    font-size: 18px;
+    background-color: rgb(111, 12, 38);
+}
+.stock button:first-child:hover, .user-btns button:first-child:hover{
     cursor: pointer;
     background-color: rgba(197, 41, 83, 0.8929);
 }
-.buy-btn:active, .add1:active, .sell-btn:active, .minus1:active, .user-btn:active{
-    box-shadow: 0 5px rgba(63, 63, 63, 0.481);
-    transform: translateY(2px);
-}
 
-
-.stock{
-    height: 100%;
-    background-color: rgba(17, 17, 17, 0.288);
+.stock button:last-child, .user-btns button:last-child{
+    padding: 10px 0;
+    font-size: 18px;
+    background-color: rgb(74, 123, 6);
 }
-
-.active{
-    background-color : rgb(12, 12, 12);
-    border: solid 1px white;
-}
-.user-btn{
-    padding: 0;
-    height: 70%;
-    border-radius: 5px;
-    color: white;
-    background-color: rgba(67, 236, 255, 0.385)
-}
-.user-btn:hover{
+.stock button:last-child:hover, .user-btns button:last-child:hover{
     cursor: pointer;
-    background-color: rgba(67, 236, 255, 0.679)
+    background-color: rgba(130, 216, 9, 0.892);
 }
 
-.users-shares{
-    display: flex;
-    width: 65%;
-    height:100%;
-    padding: 0;
-    margin: 0;
-    flex-direction: row;
-    justify-content: space-between;
+.stock input[type=number]::-webkit-inner-spin-button,
+.stock input[type=number]::-webkit-outer-spin-button{
+   -webkit-appearance:none;
 }
-.shares-div{
-    margin: 1%;
-    border: 1px solid rgba(116, 113, 113, 0.419);
-    border-radius: 2px;
-    color: rgba(175, 252, 255, 0.994);
-    height: 80%;
-    width: 25%;
+.stock input{
+    color: black;
+    font-size: 18px;
 }
-.company-name, .quantity{
-    text-align: center;
-    padding: 0 1%;
-    margin: 0 auto;
+
+.user-container{
+    display: grid;
+    background: rgb(51, 20, 70);
+    border: solid rgb(65, 28, 87) 1px;
+    border-radius: 5px;
+}
+.user-btns, .user-stocks{
+  display:grid;  
+  grid-template-columns: repeat(auto-fit,
+  minmax(120px, 1fr));
+  gap: 10px;
+}
+.user-money, .user-details{
+    display:grid;  
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.275);
+  }
+
+.user-stocks span{
+    display:grid;  
+    border: solid 1px rgb(191, 0, 255);
+    background: rgb(28,43,87);
+    background: radial-gradient(circle, rgb(65, 28, 87) 0%,
+    rgb(63, 4, 98) 61%, rgb(15, 0, 40) 100%);
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    margin-bottom: 15px;
+}
+
+.user-container input{
+    font-size: 18px;
+    width: 60%;
+    height: 60%;
+    justify-self: center;
+    align-self: center;
+    background-color: black;
+    border: solid 1px rgb(166, 143, 172);
+    border-radius: 5px;
 }
