@@ -83,7 +83,7 @@ const int = () => {
 io.on("connection", (socket) => {
   int()
   console.log("running!")
-  io.emit("printUsers", users)
+  io.emit("printUser", users)
 })
 
 const interval = setInterval(() => {

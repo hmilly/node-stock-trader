@@ -16,15 +16,18 @@ body{
 .head{
     text-align: center;
 }
-
 .head p{
     font-size: 20px;
     font-weight: bold;
 }
+.head h4{
+    color: red;
+    padding: 0;
+}
 main{
     display: grid;
     grid-template-rows: auto;
-    gap: 15%;
+    gap: 5%;
 }
 section{
     border-radius: 5px;
@@ -88,7 +91,7 @@ section{
   minmax(120px, 1fr));
   gap: 10px;
 }
-.user-money, .user-details{
+.user-wallet, .user-details{
     display:grid;  
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
